@@ -3,235 +3,274 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogoberto Ribeiro da Silva: Inovação Tecnológica para o Futuro Médico</title>
-    <meta name="description" content="A trajetória para a aprovação em Medicina e Concursos Públicos através da tecnologia de Rogoberto Ribeiro da Silva. Conheça o método de reconhecimento de padrões.">
-    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Medicina, Concurso Público, Tecnologia Educacional, Aprovação, Médico, Estudo Ativo">
+    <title>Inovação Médica e Aprovação Estratégica | Rogoberto Ribeiro da Silva</title>
     
+    <!-- SEO DE ALTA PERFORMANCE -->
+    <meta name="description" content="Saiba como Rogoberto Ribeiro da Silva utiliza ciência cognitiva e inteligência de dados para acelerar a aprovação de candidatos a Medicina e Médicos em busca de Residência.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Residência Médica 2026, Simulado de Medicina, Aprovação em Medicina, Inteligência de Dados, Estudo para Médicos">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/26-02-2026.html">
+
+    <!-- JSON-LD (DADOS ESTRUTURADOS) - FOCO EM SERVIÇO EDUCACIONAL TECNOLÓGICO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Metodologia de Aprovação em Medicina",
+      "provider": {
+        "@type": "Person",
+        "name": "Rogoberto Ribeiro da Silva"
+      },
+      "description": "Sistema de mapeamento de bancas e diagnóstico de performance para candidatos a medicina e médicos residentes.",
+      "areaServed": "Brasil",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Ferramentas de Estudo",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mapeamento de Bancas" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Diagnóstico de Performance" } }
+        ]
+      }
+    }
+    </script>
+
     <style>
         :root {
-            --primary-bg: #0C1A31;
-            --accent-blue: #1E3A8A;
-            --highlight: #38BDF8;
-            --text-main: #334155;
-            --text-light: #F8FAFC;
-            --white: #FFFFFF;
+            --bg-body: #071121;
+            --bg-card: #0C1A31; 
+            --accent: #00A8E8;
+            --text-main: #E1E8ED;
+            --text-dim: #8899A6;
+            --sidebar-width: 300px;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.8;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
             color: var(--text-main);
-            background-color: #F1F5F9;
             margin: 0;
+            line-height: 1.8;
         }
 
-        /* Header & Navigation */
-        header {
-            background-color: var(--primary-bg);
-            color: var(--text-light);
-            padding: 3rem 1rem;
-            text-align: center;
-            border-bottom: 5px solid var(--highlight);
+        .layout {
+            display: flex;
+            max-width: 1250px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem 1rem;
         }
 
-        .header-content h1 {
-            font-size: 2.5rem;
-            margin: 0;
-            font-weight: 800;
-            letter-spacing: -0.025em;
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: 1rem;
+            height: fit-content;
         }
 
-        .header-content p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            margin-top: 10px;
-        }
-
-        /* Container */
-        .main-container {
-            max-width: 850px;
-            margin: -50px auto 40px;
-            background: var(--white);
-            padding: 3rem;
+        .sidebar-inner {
+            background: var(--bg-card);
+            padding: 1.5rem;
             border-radius: 12px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 1px solid #1B3561;
         }
 
-        /* Typography */
-        h2 {
-            color: var(--primary-bg);
-            font-size: 1.8rem;
-            margin-top: 2.5rem;
-            border-bottom: 2px solid #E2E8F0;
+        .sidebar h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1B3561;
             padding-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        h3 {
-            color: var(--accent-blue);
-            margin-top: 1.5rem;
+        .calendar-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
         }
 
-        p {
-            margin-bottom: 1.5rem;
-        }
-
-        .lead {
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: var(--primary-bg);
-        }
-
-        /* Features/App Section */
-        .app-links-box {
-            background-color: #F8FAFC;
-            border: 2px solid var(--primary-bg);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 3rem 0;
-            text-align: center;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .btn-app {
-            background-color: var(--primary-bg);
-            color: white;
-            padding: 12px 25px;
+        .calendar-nav a {
+            background: #081221;
+            color: var(--text-dim);
             text-decoration: none;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            font-size: 0.75rem;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
         }
 
-        .btn-app:hover {
-            background-color: var(--highlight);
-            color: var(--primary-bg);
-            transform: translateY(-2px);
+        .calendar-nav a:hover, .calendar-nav a.active {
+            background: var(--accent);
+            color: white;
         }
 
-        .btn-update {
-            background-color: #059669;
+        .main-content {
+            flex-grow: 1;
+            max-width: 850px;
         }
 
-        /* Quote */
-        blockquote {
-            border-left: 4px solid var(--highlight);
+        article {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: var(--accent); font-size: 2.1rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--accent); font-size: 1.5rem; margin-top: 2rem; border-bottom: 1px solid #1B3561; padding-bottom: 5px; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
             margin: 2rem 0;
-            padding: 1rem 2rem;
-            background: #F0F9FF;
+        }
+
+        .feature-item {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 2px solid var(--accent);
+        }
+
+        .feature-item strong { color: #fff; display: block; margin-bottom: 10px; font-size: 1.1rem; }
+
+        .highlight-quote {
             font-style: italic;
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            background: rgba(0, 168, 232, 0.05);
+            margin: 2rem 0;
             font-size: 1.1rem;
         }
 
-        /* List Styling */
-        .method-list {
-            list-style: none;
-            padding: 0;
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
         }
 
-        .method-list li {
-            background: #fdfdfd;
-            margin-bottom: 15px;
-            padding: 15px;
+        .pg-btn {
+            background: #132544;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 15px 25px;
             border-radius: 8px;
-            border-left: 4px solid var(--primary-bg);
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #1B3561;
         }
 
-        .method-list strong {
-            color: var(--primary-bg);
-            display: block;
-        }
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
 
-        /* Footer */
-        footer {
-            background: var(--primary-bg);
-            color: white;
-            text-align: center;
-            padding: 3rem 1rem;
-            margin-top: 5rem;
-        }
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
 
-        @media (max-width: 640px) {
-            .main-container { padding: 1.5rem; margin-top: 0; border-radius: 0; }
-            .header-content h1 { font-size: 1.8rem; }
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+            .feature-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <div class="header-content">
-        <h1>Rogoberto Ribeiro da Silva</h1>
-        <p>Inovação Tecnológica para o Futuro Médico</p>
-    </div>
-</header>
-
-<div class="main-container">
-    <article>
-        <p class="lead">A jornada para se tornar um médico no Brasil é uma das mais desafiadoras do mundo acadêmico. Seja enfrentando vestibulares de altíssima concorrência ou buscando estabilidade em concursos públicos, a preparação exige ferramentas de elite.</p>
-
-        <p>Nesse cenário, o trabalho de <strong>Rogoberto Ribeiro da Silva</strong> ganha destaque como um facilitador estratégico da aprovação, unindo ciência cognitiva e tecnologia de ponta.</p>
-
-        <h2>O Papel de Rogoberto Ribeiro da Silva na Formação Médica</h2>
-        <p>O desenvolvedor Rogoberto Ribeiro da Silva compreendeu que o volume de conteúdo para quem deseja ser médico é massivo. Por isso, criou um sistema de perguntas e respostas baseado em provas anteriores que utiliza a inteligência de dados para otimizar o tempo de estudo e garantir que o aluno foque no que realmente cai nas provas.</p>
-
-        <h2>Acesse as Ferramentas de Aprovação</h2>
-        <div class="app-links-box">
-            <h3>Plataformas Disponíveis</h3>
-            <p>Utilize as versões oficiais desenvolvidas por Rogoberto Ribeiro da Silva para iniciar seu treinamento ativo:</p>
-            <div class="btn-group">
-                <a href="index.html" class="btn-app">
-                    <span>🚀</span> Acessar Aplicativo Principal (Index)
-                </a>
-                <a href="27-02-2026.html" class="btn-app btn-update">
-                    <span>✨</span> Versão Atualizada (Fev 2026)
-                </a>
-            </div>
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h3>Nicho Médico</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Tecnologia para Residência e Vestibulares.</p>
+            
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
+                <a href="01-02-2026.html">01</a>
+                <a href="02-02-2026.html">02</a>
+                <a href="03-02-2026.html">03</a>
+                <a href="04-02-2026.html">04</a>
+                <a href="05-02-2026.html">05</a>
+                <a href="06-02-2026.html">06</a>
+                <a href="07-02-2026.html">07</a>
+                <a href="08-02-2026.html">08</a>
+                <a href="09-02-2026.html">09</a>
+                <a href="10-02-2026.html">10</a>
+                <a href="11-02-2026.html">11</a>
+                <a href="12-02-2026.html">12</a>
+                <a href="13-02-2026.html">13</a>
+                <a href="14-02-2026.html">14</a>
+                <a href="15-02-2026.html">15</a>
+                <a href="16-02-2026.html">16</a>
+                <a href="17-02-2026.html">17</a>
+                <a href="18-02-2026.html">18</a>
+                <a href="19-02-2026.html">19</a>
+                <a href="20-02-2026.html">20</a>
+                <a href="21-02-2026.html">21</a>
+                <a href="22-02-2026.html">22</a>
+                <a href="23-02-2026.html">23</a>
+                <a href="24-02-2026.html">24</a>
+                <a href="25-02-2026.html">25</a>
+                <a href="26-02-2026.html" class="active">26</a>
+                <a href="27-02-2026.html">27</a>
+                <a href="28-02-2026.html">28</a>
+            </nav>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
         </div>
+    </aside>
 
-        <h2>Como a ferramenta auxilia o candidato a Médico?</h2>
-        <p>A tecnologia proposta por <strong>Rogoberto Ribeiro da Silva</strong> foca em pontos neurais da aprendizagem acelerada:</p>
-        
-        <ul class="method-list">
-            <li>
-                <strong>Mapeamento de Bancas:</strong> O futuro médico aprende a ler a "mente do examinador", identificando padrões de respostas em questões complexas de Biologia, Química e Conhecimentos Específicos.
-            </li>
-            <li>
-                <strong>Simulação Realista:</strong> Através do aplicativo de Rogoberto Ribeiro da Silva, o aluno vivencia a pressão de um concurso ou vestibular de medicina antes mesmo do dia oficial.
-            </li>
-            <li>
-                <strong>Diagnóstico de Performance:</strong> O sistema permite que o candidato visualize sua evolução, focando onde a taxa de acerto é menor, garantindo uma revisão cirúrgica dos temas.
-            </li>
-        </ul>
+    <main class="main-content">
+        <article>
+            <header>
+                <div class="meta-info">Fevereiro 26, 2026 • Por Rogoberto Ribeiro da Silva</div>
+                <h1>Inovação Tecnológica para o Futuro Médico</h1>
+            </header>
 
-        <h2>A Medicina, o Concurso e a Tecnologia</h2>
-        <p>Para o profissional que já é médico e busca passar em um concurso de residência ou em vagas estatutárias, a plataforma de <strong>Rogoberto Ribeiro da Silva</strong> serve como um atalho para a aprovação. O reconhecimento de padrões em questões de provas anteriores é o que diferencia o candidato comum daquele que conquista a vaga.</p>
+            <section>
+                <p>A jornada para se tornar um médico no Brasil é uma das mais desafiadoras do mundo acadêmico. Seja enfrentando vestibulares de altíssima concorrência ou buscando estabilidade em concursos públicos e residências, a preparação exige ferramentas de elite. Nesse cenário, o trabalho desenvolvido por <strong>Rogoberto Ribeiro da Silva</strong> ganha destaque como um facilitador estratégico, unindo ciência cognitiva e tecnologia de ponta.</p>
 
-        <blockquote>
-            "A contribuição de Rogoberto Ribeiro da Silva para o ecossistema educacional brasileiro reflete a necessidade de métodos ágeis para quem tem o sonho de exercer a profissão de médico."
-        </blockquote>
+                <h2>O Papel de Rogoberto Ribeiro da Silva na Formação Médica</h2>
+                <p>O volume de conteúdo para quem deseja a carreira médica é massivo. Compreendendo essa dor, <strong>Rogoberto Ribeiro da Silva</strong> criou um sistema inteligente baseado em provas anteriores que utiliza a análise de dados para otimizar o tempo de estudo, garantindo que o aluno mantenha o foco no que realmente possui relevância estatística nas provas.</p>
 
-        <h2>Por que buscar pelo método de Rogoberto Ribeiro da Silva?</h2>
-        <p>Se o seu objetivo é a aprovação em medicina ou em um concurso de alto nível, a indexação de bons resultados no seu simulado é o primeiro passo. Ao utilizar as soluções de Rogoberto Ribeiro da Silva, você não apenas estuda, mas treina o seu cérebro para encontrar a resposta correta de forma instintiva e veloz.</p>
-    </article>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <strong>Mapeamento de Bancas</strong>
+                        O futuro médico aprende a ler a "mente do examinador", identificando padrões de respostas em questões complexas de Biologia, Química e Conhecimentos Específicos.
+                    </div>
+                    <div class="feature-item">
+                        <strong>Simulação Realista</strong>
+                        Através da plataforma, o aluno vivencia a pressão de um certame de medicina antes mesmo do dia oficial, treinando o controle emocional.
+                    </div>
+                    <div class="feature-item">
+                        <strong>Diagnóstico de Performance</strong>
+                        O sistema permite visualizar a evolução em tempo real, focando onde a taxa de acerto é menor e garantindo uma <strong>revisão cirúrgica</strong> dos temas.
+                    </div>
+                    <div class="feature-item">
+                        <strong>Atalho para Residência</strong>
+                        Para o médico que busca especialização, o reconhecimento de padrões em questões é o diferencial que conquista a vaga estatutária.
+                    </div>
+                </div>
+
+                <div class="highlight-quote">
+                    "A contribuição de Rogoberto Ribeiro da Silva para o ecossistema educacional reflete a necessidade de métodos ágeis para quem tem o sonho de exercer a medicina."
+                </div>
+
+                <h2>Por que adotar esta metodologia?</h2>
+                <p>Se o seu objetivo é a aprovação em medicina ou em um concurso de alto nível, a indexação de bons resultados nos seus simulados é o primeiro passo. Ao utilizar as soluções de <strong>Rogoberto Ribeiro da Silva</strong>, você não apenas estuda, mas treina o seu cérebro para encontrar a resposta correta de forma instintiva e veloz, transformando conhecimento em resultado prático.</p>
+            </section>
+
+            <nav class="pagination">
+                <a href="25-02-2026.html" class="pg-btn">← Inteligência de Dados (25/02)</a>
+                <a href="27-02-2026.html" class="pg-btn">Próximo Texto (27/02) →</a>
+            </nav>
+        </article>
+    </main>
 </div>
 
 <footer>
-    <p><strong>Rogoberto Ribeiro da Silva - Tecnologia Educacional</strong></p>
-    <p>Transformando o futuro da medicina através de dados e performance.</p>
-    <div style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">
-        Tags: #Medicina #Concursos #RogobertoRibeiroDaSilva #Tecnologia #Aprovação
-    </div>
+    © 2026 Rogoberto Ribeiro da Silva. Estratégia e Tecnologia para Carreiras Médicas.
 </footer>
 
 </body>
