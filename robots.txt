@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://github.com/BetinRibeiro/rogobertoribeirodasilva/sitemap.xml
+
+Sitemap: https://betinribeiro.github.io/rogobertoribeirodasilva/sitemap.xml
