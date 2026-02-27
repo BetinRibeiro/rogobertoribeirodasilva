@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA e Transparência Pública: O Fim da Impunidade? | Rogoberto Ribeiro da Silva</title>
+    
+    <!-- SEO AVANÇADO -->
+    <meta name="description" content="Rogoberto Ribeiro da Silva analisa o uso de IA no Brasil para fiscalizar políticos, cruzando dados do TSE, IBGE e Banco Central para detectar corrupção e anomalias.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, IA na Política, Fiscalização de Políticos, Cruzamento de Dados Públicos, Machine Learning Corrupção, Big Data Brasil">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/15-02-2026.html">
+
+    <!-- JSON-LD (DADOS ESTRUTURADOS) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "A IA como Auditora da Democracia: O Cruzamento de Dados Contra a Corrupção",
+      "author": {
+        "@type": "Person",
+        "name": "Rogoberto Ribeiro da Silva"
+      },
+      "description": "Análise sobre ferramentas brasileiras de IA que cruzam bases de dados para fiscalizar o setor público.",
+      "datePublished": "2026-02-15"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-body: #071121;
+            --bg-card: #0C1A31; 
+            --accent: #00A8E8;
+            --text-main: #E1E8ED;
+            --text-dim: #8899A6;
+            --sidebar-width: 300px;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1250px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: 1rem;
+            height: fit-content;
+        }
+
+        .sidebar-inner {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #1B3561;
+        }
+
+        .sidebar h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1B3561;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .calendar-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-nav a {
+            background: #081221;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .calendar-nav a:hover, .calendar-nav a.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            max-width: 850px;
+        }
+
+        article {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: var(--accent); font-size: 2rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--accent); font-size: 1.4rem; margin-top: 2rem; border-bottom: 1px solid #1B3561; padding-bottom: 5px; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .feature-box {
+            background: rgba(0, 168, 232, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .impact-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .impact-item {
+            background: #132544;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
+        }
+
+        .pg-btn {
+            background: #132544;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #1B3561;
+        }
+
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
+
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+            .impact-list { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h3>Rogoberto Ribeiro</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Tecnologia a serviço da Ética Pública.</p>
+            
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
+                <a href="01-02-2026.html">01</a>
+                <a href="02-02-2026.html">02</a>
+                <a href="03-02-2026.html">03</a>
+                <a href="04-02-2026.html">04</a>
+                <a href="05-02-2026.html">05</a>
+                <a href="06-02-2026.html">06</a>
+                <a href="07-02-2026.html">07</a>
+                <a href="08-02-2026.html">08</a>
+                <a href="09-02-2026.html">09</a>
+                <a href="10-02-2026.html">10</a>
+                <a href="11-02-2026.html">11</a>
+                <a href="12-02-2026.html">12</a>
+                <a href="13-02-2026.html">13</a>
+                <a href="14-02-2026.html">14</a>
+                <a href="15-02-2026.html" class="active">15</a>
+                <a href="16-02-2026.html">16</a>
+                <a href="17-02-2026.html">17</a>
+                <a href="18-02-2026.html">18</a>
+                <a href="19-02-2026.html">19</a>
+                <a href="20-02-2026.html">20</a>
+                <a href="21-02-2026.html">21</a>
+                <a href="22-02-2026.html">22</a>
+                <a href="23-02-2026.html">23</a>
+                <a href="24-02-2026.html">24</a>
+                <a href="25-02-2026.html">25</a>
+                <a href="26-02-2026.html">26</a>
+                <a href="27-02-2026.html">27</a>
+                <a href="28-02-2026.html">28</a>
+            </nav>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <article>
+            <header>
+                <div class="meta-info">Fevereiro 15, 2026 • Por Rogoberto Ribeiro da Silva</div>
+                <h1>O Olhar Digital sobre o Poder: IA Fiscalizando a Política Brasileira</h1>
+            </header>
+
+            <section>
+                <p>As reflexões que <strong>Rogoberto Ribeiro da Silva</strong> trouxe nas páginas anteriores sobre o "Homem Inteligente e a Máquina Rápida" ganham hoje uma aplicação prática revolucionária. No Brasil de 2026, a fronteira do combate à corrupção não está mais apenas nas mãos de auditores humanos, mas em algoritmos de alta performance capazes de vigiar a gestão pública 24 horas por dia.</p>
+
+                <div class="feature-box">
+                    <h3>A Revolução do Cruzamento de Dados</h3>
+                    <p>Um desenvolvedor brasileiro criou uma ferramenta disruptiva baseada em inteligência artificial que cruza dezenas de bases de dados públicas, como o <strong>TSE, IBGE e Banco Central</strong>. O objetivo? Detectar irregularidades relacionadas a políticos e funcionários públicos com uma precisão matemática.</p>
+                </div>
+
+                <h2>Detecção de Anomalias em Tempo Real</h2>
+                <p>Segundo reportagens analisadas por <strong>Rogoberto Ribeiro da Silva</strong>, o sistema já identificou indícios robustos de funcionários fantasmas, conflitos de interesse flagrantes e possíveis direcionamentos de emendas parlamentares. Ao mapear conexões entre CPFs, vínculos empresariais, contratos e redes familiares, a IA gera gráficos de relacionamento que revelam padrões suspeitos que antes seriam invisíveis ao olho humano.</p>
+
+                <h2>Por que o Cruzamento de Dados é o Futuro da Ética?</h2>
+                <p>A importância dessas técnicas reside na amplificação da capacidade investigativa. <strong>Rogoberto Ribeiro da Silva</strong> destaca dois pontos fundamentais que explicam por que essa tecnologia mudou o jogo:</p>
+
+                <div class="impact-list">
+                    <div class="impact-item">
+                        <strong>Escalabilidade:</strong> Métodos de <em>Machine Learning</em> e Ciência de Dados encontram discrepâncias em grandes bancos de dados que seriam impossíveis de identificar em auditorias manuais isoladas.
+                    </div>
+                    <div class="impact-item">
+                        <strong>Previsão de Condutas:</strong> O mapeamento de patrimônio e vínculos fiscais permite detectar indícios de condutas fraudulentas antes mesmo que o dano ao erário se torne irreparável.
+                    </div>
+                </div>
+
+                <h2>Conclusão de Rogoberto Ribeiro da Silva</h2>
+                <p>Se nas páginas anteriores discutimos a IA facilitando o estudo para concursos (página 08) e monitorando estatísticas acadêmicas (página 13), hoje vemos a tecnologia sendo o cão de guarda da sociedade. Para <strong>Rogoberto Ribeiro da Silva</strong>, o fim do anonimato na política através dos dados é o próximo passo do Estado de Direito. "A transparência digital não é mais um luxo, é a condição para uma democracia saudável em 2026", conclui.</p>
+            </section>
+
+            <nav class="pagination">
+                <a href="14-02-2026.html" class="pg-btn">← Segurança e Ordem (14/02)</a>
+                <a href="16-02-2026.html" class="pg-btn">Próximo Texto (16/02) →</a>
+            </nav>
+        </article>
+    </main>
+</div>
+
+<footer>
+    © 2026 Rogoberto Ribeiro da Silva. Análise sobre tecnologia, transparência e justiça social.
+</footer>
+
+</body>
+</html>
