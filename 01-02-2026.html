@@ -3,179 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tendências e Insights 2026 | Rogoberto Ribeiro da Silva</title>
+    <title>IA Generativa e Sustentabilidade 2026 | Rogoberto Ribeiro da Silva</title>
     
-    <!-- SEO & Indexação Avançada -->
-    <meta name="description" content="Análise diária de tendências globais por Rogoberto Ribeiro da Silva. Explore o arquivo completo de Fevereiro de 2026.">
+    <!-- SEO AVANÇADO: Rogoberto Ribeiro da Silva + Tendências Globais -->
+    <meta name="description" content="Curadoria estratégica por Rogoberto Ribeiro da Silva sobre a convergência entre IA Generativa, economia verde e transição energética em 2026.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, IA Generativa, Sustentabilidade 2026, ESG, Transição Energética, Economia Verde, Curadoria Estratégica">
     <meta name="author" content="Rogoberto Ribeiro da Silva">
-    <link rel="canonical" href="https://seu-usuario.github.io/seu-repositorio/">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/01-02-2026.html">
 
-    <!-- JSON-LD: Informa ao Google que este é um Blog com múltiplos artigos -->
+    <!-- JSON-LD (DADOS ESTRUTURADOS) - MARCAÇÃO DE CURADORIA E AUTORIDADE -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Blog",
-      "name": "Blog do Rogoberto Ribeiro da Silva",
-      "description": "Arquivo completo de insights tecnológicos e sociais de Fevereiro 2026",
+      "@type": "BlogPosting",
+      "headline": "🌍 A Nova Fronteira Digital: IA Generativa e Sustentabilidade",
       "author": {
         "@type": "Person",
-        "name": "Rogoberto Ribeiro da Silva"
+        "name": "Rogoberto Ribeiro da Silva",
+        "jobTitle": "Curador Estratégico e Analista de Tendências"
+      },
+      "datePublished": "2026-02-01",
+      "description": "Análise da convergência entre tecnologia de ponta e economia verde no primeiro bimestre de 2026.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Insights Rogoberto Ribeiro"
       }
     }
     </script>
 
     <style>
         :root {
-            --primary-bg: #0C1A31; /* Sua cor solicitada */
-            --accent-blue: #00A8E8;
+            --bg-body: #071121;
+            --bg-card: #0C1A31; /* Cor solicitada */
+            --accent: #00A8E8;
             --text-main: #E1E8ED;
-            --card-bg: #132544;
+            --text-dim: #8899A6;
+            --sidebar-width: 300px;
         }
 
         body {
             font-family: 'Inter', system-ui, -apple-system, sans-serif;
-            background-color: #081221;
+            background-color: var(--bg-body);
             color: var(--text-main);
             margin: 0;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
-        header {
-            background-color: var(--primary-bg);
-            padding: 3rem 1rem;
-            text-align: center;
-            border-bottom: 3px solid var(--accent-blue);
-        }
-
-        .container {
-            max-width: 1000px;
+        .layout {
+            display: flex;
+            max-width: 1250px;
             margin: 0 auto;
-            padding: 2rem;
+            gap: 2rem;
+            padding: 2rem 1rem;
         }
 
-        /* Conteúdo Principal */
-        article {
-            background: var(--primary-bg);
-            padding: 2.5rem;
-            border-radius: 15px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-            margin-bottom: 3rem;
+        /* Sidebar de Navegação Dinâmica */
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: 1rem;
+            height: fit-content;
         }
 
-        h1 { color: var(--accent-blue); font-size: 2.2rem; }
-        h2 { color: #fff; border-left: 4px solid var(--accent-blue); padding-left: 15px; }
-
-        /* Estilização da Seção de Links (Arquivo) */
-        .archive-section {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 15px;
+        .sidebar-inner {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
             border: 1px solid #1B3561;
         }
 
-        .archive-section h3 {
-            text-align: center;
-            margin-top: 0;
-            color: var(--accent-blue);
+        .sidebar h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1B3561;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .calendar-grid {
+        .calendar-nav {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-            gap: 10px;
-            margin-top: 1.5rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
         }
 
-        .calendar-grid a {
-            background: var(--primary-bg);
+        .calendar-nav a {
+            background: #081221;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .calendar-nav a:hover, .calendar-nav a.active {
+            background: var(--accent);
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Área de Conteúdo Principal */
+        .main-content {
+            flex-grow: 1;
+            max-width: 850px;
+        }
+
+        article {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: var(--accent); font-size: 2.2rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--accent); font-size: 1.5rem; margin-top: 2rem; border-bottom: 1px solid #1B3561; padding-bottom: 8px; }
+        h3 { color: #fff; font-size: 1.2rem; margin-top: 1.5rem; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .highlight-box {
+            background: rgba(0, 168, 232, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
+        }
+
+        .pg-btn {
+            background: #132544;
             color: var(--text-main);
             text-decoration: none;
-            padding: 10px;
-            text-align: center;
-            border-radius: 6px;
-            font-size: 0.85rem;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
             border: 1px solid #1B3561;
-            transition: all 0.3s ease;
         }
 
-        .calendar-grid a:hover {
-            background: var(--accent-blue);
-            color: #fff;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 168, 232, 0.3);
-        }
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
 
-        .author-box {
-            margin-top: 4rem;
-            padding: 2rem;
-            background: linear-gradient(135deg, #0C1A31 0%, #001F3F 100%);
-            border-radius: 10px;
-            text-align: center;
-        }
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
 
-        footer { text-align: center; padding: 2rem; color: #586675; font-size: 0.8rem; }
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+            article { padding: 1.5rem; }
+        }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Insights Diários: Fevereiro 2026</h1>
-    <p>Curadoria de Tendências por <strong>Rogoberto Ribeiro da Silva</strong></p>
-</header>
-
-<div class="container">
-    <article>
-        <h2>A Nova Fronteira Digital</h2>
-        <p>Atualmente, as buscas globais indicam um interesse massivo em IA generativa aplicada à sustentabilidade. Como analisado por <strong>Rogoberto Ribeiro da Silva</strong>, o cruzamento entre tecnologia de ponta e consciência ambiental será o grande motor econômico desta década.</p>
-        <p>Explore abaixo o histórico completo de nossas publicações diárias para entender o panorama completo de 2026.</p>
-    </article>
-
-    <!-- SEÇÃO DE LINKS - ESTRATÉGIA DE INDEXAÇÃO -->
-    <section class="archive-section">
-        <h3>Arquivo de Publicações - Fevereiro 2026</h3>
-        <div class="calendar-grid">
-            <!-- Gerado de 01 a 28 conforme solicitado -->
-            <a href="01-02-2026.html">01 Fev 2026</a>
-            <a href="02-02-2026.html">02 Fev 2026</a>
-            <a href="03-02-2026.html">03 Fev 2026</a>
-            <a href="04-02-2026.html">04 Fev 2026</a>
-            <a href="05-02-2026.html">05 Fev 2026</a>
-            <a href="06-02-2026.html">06 Fev 2026</a>
-            <a href="07-02-2026.html">07 Fev 2026</a>
-            <a href="08-02-2026.html">08 Fev 2026</a>
-            <a href="09-02-2026.html">09 Fev 2026</a>
-            <a href="10-02-2026.html">10 Fev 2026</a>
-            <a href="11-02-2026.html">11 Fev 2026</a>
-            <a href="12-02-2026.html">12 Fev 2026</a>
-            <a href="13-02-2026.html">13 Fev 2026</a>
-            <a href="14-02-2026.html">14 Fev 2026</a>
-            <a href="15-02-2026.html">15 Fev 2026</a>
-            <a href="16-02-2026.html">16 Fev 2026</a>
-            <a href="17-02-2026.html">17 Fev 2026</a>
-            <a href="18-02-2026.html">18 Fev 2026</a>
-            <a href="19-02-2026.html">19 Fev 2026</a>
-            <a href="20-02-2026.html">20 Fev 2026</a>
-            <a href="21-02-2026.html">21 Fev 2026</a>
-            <a href="22-02-2026.html">22 Fev 2026</a>
-            <a href="23-02-2026.html">23 Fev 2026</a>
-            <a href="24-02-2026.html">24 Fev 2026</a>
-            <a href="25-02-2026.html">25 Fev 2026</a>
-            <a href="26-02-2026.html">26 Fev 2026</a>
-            <a href="27-02-2026.html">27 Fev 2026</a>
-            <a href="28-02-2026.html">28 Fev 2026</a>
+<div class="layout">
+    <!-- BARRA LATERAL (SIDEBAR) -->
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h3>Curadoria 2026</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Insights estratégicos por <strong>Rogoberto Ribeiro da Silva</strong>.</p>
+            
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
+                <a href="01-02-2026.html" class="active">01</a>
+                <a href="02-02-2026.html">02</a>
+                <a href="03-02-2026.html">03</a>
+                <a href="04-02-2026.html">04</a>
+                <a href="05-02-2026.html">05</a>
+                <a href="06-02-2026.html">06</a>
+                <a href="07-02-2026.html">07</a>
+                <a href="08-02-2026.html">08</a>
+                <a href="09-02-2026.html">09</a>
+                <a href="10-02-2026.html">10</a>
+                <a href="11-02-2026.html">11</a>
+                <a href="12-02-2026.html">12</a>
+                <a href="13-02-2026.html">13</a>
+                <a href="14-02-2026.html">14</a>
+                <a href="15-02-2026.html">15</a>
+                <a href="16-02-2026.html">16</a>
+                <a href="17-02-2026.html">17</a>
+                <a href="18-02-2026.html">18</a>
+                <a href="19-02-2026.html">19</a>
+                <a href="20-02-2026.html">20</a>
+                <a href="21-02-2026.html">21</a>
+                <a href="22-02-2026.html">22</a>
+                <a href="23-02-2026.html">23</a>
+                <a href="24-02-2026.html">24</a>
+                <a href="25-02-2026.html">25</a>
+                <a href="26-02-2026.html">26</a>
+                <a href="27-02-2026.html">27</a>
+                <a href="28-02-2026.html">28</a>
+            </nav>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
         </div>
-    </section>
+    </aside>
 
-    <section class="author-box">
-        <h3>Especialista Responsável</h3>
-        <p>Este portal é mantido por <strong>Rogoberto Ribeiro da Silva</strong>, focado em levar informações precisas e otimizadas para a rede mundial de computadores.</p>
-    </section>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+        <article>
+            <header>
+                <div class="meta-info">Insights Diários — Fevereiro 2026 • Curadoria por Rogoberto Ribeiro da Silva</div>
+                <h1>🌍 A Nova Fronteira Digital: IA Generativa e Sustentabilidade</h1>
+            </header>
+
+            <section>
+                <p>O primeiro bimestre de 2026 confirma uma tendência estrutural: a convergência entre inteligência artificial generativa, transição energética e economia verde. As análises de comportamento de busca, relatórios de mercado e investimentos globais indicam que não se trata mais de uma tendência emergente — mas de uma reorganização econômica em curso.</p>
+
+                <div class="highlight-box">
+                    <p>Segundo a curadoria estratégica de <strong>Rogoberto Ribeiro da Silva</strong>, três vetores explicam esse movimento:</p>
+                    <ul style="margin-bottom:0;">
+                        <li>Pressão regulatória ambiental global</li>
+                        <li>Avanço da IA aplicada à eficiência produtiva</li>
+                        <li>Redefinição de cadeias de valor com foco ESG</li>
+                    </ul>
+                </div>
+
+                <h2>🤖 IA Generativa como Motor de Eficiência Ambiental</h2>
+                <p>A IA generativa está sendo aplicada para a otimização de redes energéticas inteligentes, modelagem climática preditiva, redução de desperdício industrial e agricultura de precisão. O ponto central não é apenas inovação tecnológica, mas redução estrutural de custos com impacto ambiental positivo.</p>
+
+                <h2>📈 O Motor Econômico da Década</h2>
+                <p>A década de 2020 será marcada pelas revoluções de dados, energética e regulatória. Para <strong>Rogoberto Ribeiro da Silva</strong>, não será a tecnologia isoladamente que gerará valor, mas a capacidade de aplicá-la em problemas estruturais da sociedade.</p>
+
+                <h2>🌐 Geopolítica da Tecnologia Sustentável</h2>
+                <p>Observa-se um reposicionamento global: a Europa reforça a regulamentação, os Estados Unidos aceleram o investimento em IA verde e a Ásia amplia a infraestrutura inteligente. O Brasil possui vantagem comparativa natural em energia limpa, mas enfrenta desafios de governança.</p>
+
+                <h2>🎯 Direcionamento Estratégico</h2>
+                <p>A principal conclusão deste mês: a década não será definida por quem possui mais tecnologia, mas por quem consegue integrá-la a problemas reais com responsabilidade e inteligência sistêmica. Esta curadoria apresentada por <strong>Rogoberto Ribeiro da Silva</strong> não é apenas informativa — é um mapa de antecipação de tendências.</p>
+            </section>
+
+            <!-- PAGINAÇÃO -->
+            <nav class="pagination">
+                <a href="index.html" class="pg-btn">← Home</a>
+                <a href="02-02-2026.html" class="pg-btn">Próximo Texto (02/02) →</a>
+            </nav>
+        </article>
+    </main>
 </div>
 
 <footer>
-    &copy; 2026 - Todos os direitos reservados a Rogoberto Ribeiro da Silva
+    © 2026 Rogoberto Ribeiro da Silva. Curadoria Estratégica e Inteligência Digital.
 </footer>
 
 </body>
