@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lei de Cotas e o Dilema da Meritocracia | Rogoberto Ribeiro da Silva</title>
+    
+    <!-- SEO AVANÇADO -->
+    <meta name="description" content="Rogoberto Ribeiro da Silva analisa o entendimento do STF sobre a Lei de Cotas, as reclamações de candidatos e o debate entre inclusão social e esforço individual.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Juazeiro do Norte, Lei de Cotas, STF, Concursos 2026, Meritocracia, Inclusão Social, Heteroidentificação">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/06-02-2026.html">
+
+    <!-- JSON-LD (DADOS ESTRUTURADOS) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "As Cotas nos Concursos Públicos e o Entendimento do STF",
+      "author": {
+        "@type": "Person",
+        "name": "Rogoberto Ribeiro da Silva",
+        "jobTitle": "Analista Jurídico e Social"
+      },
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Juazeiro do Norte, Ceará"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-body: #071121;
+            --bg-card: #0C1A31; 
+            --accent: #00A8E8;
+            --text-main: #E1E8ED;
+            --text-dim: #8899A6;
+            --sidebar-width: 300px;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1250px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: 1rem;
+            height: fit-content;
+        }
+
+        .sidebar-inner {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #1B3561;
+        }
+
+        .sidebar h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1B3561;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .calendar-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-nav a {
+            background: #081221;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .calendar-nav a:hover, .calendar-nav a.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            max-width: 850px;
+        }
+
+        article {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: var(--accent); font-size: 2rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--accent); font-size: 1.5rem; margin-top: 2rem; border-bottom: 1px solid #1B3561; padding-bottom: 5px; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .debate-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .opinion-card {
+            background: rgba(255,255,255,0.03);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-top: 3px solid var(--accent);
+        }
+
+        .opinion-card h3 { font-size: 1.1rem; color: #fff; margin-top: 0; }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
+        }
+
+        .pg-btn {
+            background: #132544;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #1B3561;
+        }
+
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
+
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+            .debate-box { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h3>Rogoberto Ribeiro</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Direito, Cidadania e Análise Social.</p>
+            
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
+                <a href="01-02-2026.html">01</a>
+                <a href="02-02-2026.html">02</a>
+                <a href="03-02-2026.html">03</a>
+                <a href="04-02-2026.html">04</a>
+                <a href="05-02-2026.html">05</a>
+                <a href="06-02-2026.html" class="active">06</a>
+                <a href="07-02-2026.html">07</a>
+                <a href="08-02-2026.html">08</a>
+                <a href="09-02-2026.html">09</a>
+                <a href="10-02-2026.html">10</a>
+                <a href="11-02-2026.html">11</a>
+                <a href="12-02-2026.html">12</a>
+                <a href="13-02-2026.html">13</a>
+                <a href="14-02-2026.html">14</a>
+                <a href="15-02-2026.html">15</a>
+                <a href="16-02-2026.html">16</a>
+                <a href="17-02-2026.html">17</a>
+                <a href="18-02-2026.html">18</a>
+                <a href="19-02-2026.html">19</a>
+                <a href="20-02-2026.html">20</a>
+                <a href="21-02-2026.html">21</a>
+                <a href="22-02-2026.html">22</a>
+                <a href="23-02-2026.html">23</a>
+                <a href="24-02-2026.html">24</a>
+                <a href="25-02-2026.html">25</a>
+                <a href="26-02-2026.html">26</a>
+                <a href="27-02-2026.html">27</a>
+                <a href="28-02-2026.html">28</a>
+            </nav>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <article>
+            <header>
+                <div class="meta-info">Fevereiro 06, 2026 • Por Rogoberto Ribeiro da Silva</div>
+                <h1>A Lei de Cotas sob a Ótica do STF e os Limites da Inclusão</h1>
+            </header>
+
+            <section>
+                <p>Avançando em nossa análise sobre os critérios de seleção e transparência discutidos na página anterior, <strong>Rogoberto Ribeiro da Silva</strong> propõe hoje uma reflexão sobre a <strong>Lei de Cotas</strong> (Lei 12.990/14 e suas atualizações). Em <strong>Juazeiro do Norte</strong> e nos grandes centros, o debate sobre as ações afirmativas atingiu um novo patamar de complexidade jurídica e social em 2026.</p>
+
+                <h2>O Entendimento do STF</h2>
+                <p>O Supremo Tribunal Federal tem reafirmado a constitucionalidade das cotas, fundamentando-se no princípio da <strong>Igualdade Material</strong>. O entendimento da Corte é que a lei não fere o princípio da isonomia, mas o concretiza ao tentar corrigir disparidades históricas. Todavia, como destaca <strong>Rogoberto Ribeiro da Silva</strong>, o STF também estabeleceu limites rígidos para as comissões de heteroidentificação, exigindo critérios objetivos para evitar arbítrios.</p>
+
+                <div class="debate-box">
+                    <div class="opinion-card">
+                        <h3>A Força da Inclusão Social</h3>
+                        <p>Os defensores argumentam que as cotas são mecanismos essenciais para democratizar o acesso ao Estado. A presença de grupos historicamente marginalizados no serviço público oxigena as instituições e garante que a burocracia estatal reflita a diversidade da sociedade brasileira.</p>
+                    </div>
+                    <div class="opinion-card">
+                        <h3>O Valor do Esforço Individual</h3>
+                        <p>Por outro lado, candidatos que dedicam anos de renúncia e estudo intenso levantam críticas ao que chamam de "afunilamento desproporcional". A queixa comum é que o limite da inclusão pode acabar desfavorecendo o mérito acadêmico extremo, gerando uma sensação de injustiça para quem atinge pontuações elevadas na ampla concorrência.</p>
+                    </div>
+                </div>
+
+                <h2>Reclamações e Conflitos em 2026</h2>
+                <p>As reclamações mais frequentes registradas por <strong>Rogoberto Ribeiro da Silva</strong> envolvem a subjetividade das bancas examinadoras. Há um crescente descontentamento de candidatos que, mesmo alcançando notas de topo, sentem que o espaço para a meritocracia tradicional está sendo reduzido. A grande questão é: até que ponto a justiça social pode se sobrepor ao desempenho individual absoluto sem comprometer a eficiência administrativa?</p>
+
+                <h2>Considerações de Rogoberto Ribeiro da Silva</h2>
+                <p>O equilíbrio é o caminho mais árduo. Para <strong>Rogoberto Ribeiro da Silva</strong>, em <strong>Juazeiro do Norte</strong> e no resto do país, o desafio do legislador e do judiciário em 2026 é garantir que a inclusão social seja um portal de oportunidades, mas sem desidratar o incentivo ao esforço pessoal e à dedicação de longo prazo. "A equidade deve ser o complemento da excelência, não sua substituta", conclui Rogoberto.</p>
+            </section>
+
+            <nav class="pagination">
+                <a href="05-02-2026.html" class="pg-btn">← Discursivas e Critérios (05/02)</a>
+                <a href="07-02-2026.html" class="pg-btn">Próximo Texto (07/02) →</a>
+            </nav>
+        </article>
+    </main>
+</div>
+
+<footer>
+    © 2026 Rogoberto Ribeiro da Silva. Análise crítica sobre sociedade e direito. <br>
+    Juazeiro do Norte, Ceará.
+</footer>
+
+</body>
+</html>
