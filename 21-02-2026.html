@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação em Saúde e Profissões Emergentes | Rogoberto Ribeiro da Silva</title>
+    
+    <!-- SEO AVANÇADO -->
+    <meta name="description" content="Rogoberto Ribeiro da Silva detalha a formação de médicos e enfermeiros no Brasil, os desafios entre saúde pública e privada e as novas carreiras digitais.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Formação Médica, Enfermagem Brasil, Residência Médica, Saúde Digital, Genômica, Carreira na Saúde">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/21-02-2026.html">
+
+    <!-- JSON-LD (DADOS ESTRUTURADOS) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalArticle",
+      "headline": "A Formação Acadêmica e o Futuro Digital das Profissões de Saúde",
+      "author": {
+        "@type": "Person",
+        "name": "Rogoberto Ribeiro da Silva"
+      },
+      "description": "Análise sobre os ciclos de graduação, especialização e as tendências tecnológicas para profissionais de saúde em 2026.",
+      "datePublished": "2026-02-21"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-body: #071121;
+            --bg-card: #0C1A31; 
+            --accent: #00A8E8;
+            --text-main: #E1E8ED;
+            --text-dim: #8899A6;
+            --sidebar-width: 300px;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1250px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: 1rem;
+            height: fit-content;
+        }
+
+        .sidebar-inner {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #1B3561;
+        }
+
+        .sidebar h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1B3561;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .calendar-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-nav a {
+            background: #081221;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .calendar-nav a:hover, .calendar-nav a.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            max-width: 850px;
+        }
+
+        article {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: var(--accent); font-size: 2rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--accent); font-size: 1.4rem; margin-top: 2rem; border-bottom: 1px solid #1B3561; padding-bottom: 5px; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .education-box {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.9rem;
+        }
+
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #1B3561;
+            padding: 12px;
+            text-align: left;
+        }
+
+        .comparison-table th { background: #132544; color: var(--accent); }
+
+        .emerging-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .career-card {
+            background: #132544;
+            padding: 1rem;
+            border-radius: 8px;
+            border-top: 2px solid var(--accent);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
+        }
+
+        .pg-btn {
+            background: #132544;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #1B3561;
+        }
+
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
+
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h3>Rogoberto Ribeiro</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Educação e Futuro das Profissões.</p>
+            
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
+                <a href="18-02-2026.html">18</a>
+                <a href="19-02-2026.html">19</a>
+                <a href="20-02-2026.html">20</a>
+                <a href="21-02-2026.html" class="active">21</a>
+                <a href="22-02-2026.html">22</a>
+                <!-- ... -->
+                <a href="28-02-2026.html">28</a>
+            </nav>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <article>
+            <header>
+                <div class="meta-info">Fevereiro 21, 2026 • Por Rogoberto Ribeiro da Silva</div>
+                <h1>A Jornada da Saúde: Da Graduação à Era da Inteligência Artificial</h1>
+            </header>
+
+            <section>
+                <p>Na página anterior, <strong>Rogoberto Ribeiro da Silva</strong> analisou a força de trabalho que sustenta o SUS (dia 20). Hoje, mergulhamos no rigoroso processo de formação desses profissionais e nas novas carreiras que surgem com a super evolução tecnológica discutida no início desta série.</p>
+
+                <h2>1. Formação Médica e de Enfermagem no Brasil</h2>
+                <div class="education-box">
+                    <h3>📚 Graduação e CRM/COREN</h3>
+                    <p>A medicina exige 6 anos de graduação em tempo integral, culminando no Internato e no registro no CFM. Diferente de outras áreas, não há exame de ordem, mas a <strong>Residência Médica</strong> (2 a 5 anos) é o que define o especialista. Já o enfermeiro dedica 5 anos à graduação, com autonomia técnica central na atenção primária.</p>
+                </div>
+
+                <h2>2. Público vs. Privado: O Grande Dilema</h2>
+                <p>Para <strong>Rogoberto Ribeiro da Silva</strong>, o profissional brasileiro atua em dois mundos distintos:</p>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Característica</th>
+                            <th>Saúde Pública (SUS)</th>
+                            <th>Saúde Privada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Acesso</strong></td>
+                            <td>Universal e Gratuito</td>
+                            <td>Restrito a Convênios/Pagos</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Demanda</strong></td>
+                            <td>Alta e Constante</td>
+                            <td>Regulada pelo Mercado</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Orçamento</strong></td>
+                            <td>Público (Gestão de Políticas)</td>
+                            <td>Receita de Convênios</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>3. Carreiras Emergentes: A Saúde 4.0</h2>
+                <p>O profissional de 2026 precisa ir além da clínica. <strong>Rogoberto Ribeiro da Silva</strong> destaca as áreas que mais crescem sob a influência da IA e do Big Data:</p>
+                <div class="emerging-grid">
+                    <div class="career-card">
+                        <strong>🤖 Saúde Digital</strong><br>
+                        Foco em prontuários eletrônicos e integração via telemedicina.
+                    </div>
+                    <div class="career-card">
+                        <strong>📊 Cientista de Dados</strong><br>
+                        Análise de modelos preditivos e epidemiologia hospitalar.
+                    </div>
+                    <div class="career-card">
+                        <strong>🧬 Medicina Genômica</strong><br>
+                        Personalização de tratamentos através de testes genéticos.
+                    </div>
+                    <div class="career-card">
+                        <strong>🖥 Engenharia Clínica</strong><br>
+                        Manutenção e inovação de equipamentos de alta complexidade.
+                    </div>
+                </div>
+
+                <h2>Conclusão de Rogoberto Ribeiro da Silva</h2>
+                <p>A saúde deixou de ser apenas assistência física para se tornar uma ciência de dados, gestão e bioética. Para <strong>Rogoberto Ribeiro da Silva</strong>, o sucesso em 2026 exige visão interdisciplinar. "O médico e o enfermeiro do futuro são aqueles que sabem curar com o toque humano e diagnosticar com a velocidade das máquinas", conclui. O caminho é longo, mas a tecnologia é o novo aliado dessa jornada.</p>
+            </section>
+
+            <nav class="pagination">
+                <a href="20-02-2026.html" class="pg-btn">← Profissionais do SUS (20/02)</a>
+                <a href="22-02-2026.html" class="pg-btn">Próximo Texto (22/02) →</a>
+            </nav>
+        </article>
+    </main>
+</div>
+
+<footer>
+    © 2026 Rogoberto Ribeiro da Silva. Análise de carreiras, educação e inovação tecnológica.
+</footer>
+
+</body>
+</html>
