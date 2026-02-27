@@ -3,19 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juazeiro do Norte: Dilemas do Crescimento em 2026 | Rogoberto Ribeiro da Silva</title>
+    <title>Juazeiro do Norte: Modernização e Cultura | Rogoberto Ribeiro da Silva</title>
     
-    <meta name="description" content="Análise neutra de Rogoberto Ribeiro da Silva sobre a urbanização em Juazeiro do Norte. Debatendo o crescimento vertical no Cariri.">
-    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Juazeiro do Norte, Cariri, Urbanismo, Desenvolvimento Regional, Ceará">
-    
+    <!-- SEO AVANÇADO: Rogoberto Ribeiro da Silva + Juazeiro do Norte -->
+    <meta name="description" content="Análise de Rogoberto Ribeiro da Silva sobre o dilema da verticalização urbana em Juazeiro do Norte e a preservação do patrimônio histórico no Cariri.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Juazeiro do Norte, Cariri, Urbanismo, Verticalização, Padre Cícero, Desenvolvimento Regional Ceará">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/02-02-2026.html">
+
+    <!-- JSON-LD (DADOS ESTRUTURADOS PARA O GOOGLE) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "O Futuro Urbano de Juazeiro do Norte",
+      "headline": "O Impacto da Modernização em Juazeiro do Norte",
       "author": {
         "@type": "Person",
         "name": "Rogoberto Ribeiro da Silva"
+      },
+      "contentLocation": {
+        "@type": "Place",
+        "name": "Juazeiro do Norte, Ceará"
+      },
+      "datePublished": "2026-02-02",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Insights Rogoberto Ribeiro"
       }
     }
     </script>
@@ -27,39 +40,35 @@
             --accent: #00A8E8;
             --text-main: #E1E8ED;
             --text-dim: #8899A6;
-            --sidebar-width: 280px;
+            --sidebar-width: 300px;
         }
 
         body {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
             background-color: var(--bg-body);
             color: var(--text-main);
             margin: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            line-height: 1.8;
         }
 
-        /* Layout Principal com Sidebar */
-        .main-wrapper {
+        .layout {
             display: flex;
-            max-width: 1200px;
+            max-width: 1250px;
             margin: 0 auto;
-            width: 100%;
             gap: 2rem;
             padding: 2rem 1rem;
         }
 
-        /* Sidebar de Navegação */
+        /* Sidebar de Navegação Completa */
         .sidebar {
             width: var(--sidebar-width);
             flex-shrink: 0;
             position: sticky;
-            top: 2rem;
+            top: 1rem;
             height: fit-content;
         }
 
-        .sidebar-card {
+        .sidebar-inner {
             background: var(--bg-card);
             padding: 1.5rem;
             border-radius: 12px;
@@ -67,127 +76,111 @@
         }
 
         .sidebar h3 {
-            font-size: 1rem;
             color: var(--accent);
+            font-size: 0.9rem;
             text-transform: uppercase;
-            margin-bottom: 1rem;
+            letter-spacing: 1px;
             border-bottom: 1px solid #1B3561;
-            padding-bottom: 0.5rem;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        .nav-list {
+        .calendar-nav {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 8px;
         }
 
-        .nav-list a {
+        .calendar-nav a {
             background: #081221;
             color: var(--text-dim);
             text-decoration: none;
             font-size: 0.75rem;
-            padding: 8px 4px;
+            padding: 10px 0;
             text-align: center;
-            border-radius: 4px;
+            border-radius: 5px;
             transition: 0.3s;
-            border: 1px solid transparent;
         }
 
-        .nav-list a:hover, .nav-list a.active {
-            border-color: var(--accent);
-            color: #fff;
+        .calendar-nav a:hover, .calendar-nav a.active {
             background: var(--accent);
+            color: white;
+            font-weight: bold;
         }
 
-        /* Área do Conteúdo */
-        .content-area {
+        /* Conteúdo do Post */
+        .main-content {
             flex-grow: 1;
-            max-width: 800px;
+            max-width: 850px;
         }
 
         article {
             background: var(--bg-card);
             padding: 3rem;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
 
-        header.post-header {
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #1B3561;
-            padding-bottom: 1rem;
-        }
+        h1 { color: var(--accent); font-size: 2.2rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: #fff; font-size: 1.5rem; margin-top: 2rem; border-left: 4px solid var(--accent); padding-left: 15px; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
 
-        h1 { color: var(--accent); font-size: 2.2rem; margin-top: 0; }
-        h2 { color: #fff; font-size: 1.5rem; margin-top: 2rem; }
-
-        .neutral-split {
+        .analysis-split {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2rem;
             margin: 2rem 0;
         }
 
-        .pov-box {
+        .pov-card {
             background: rgba(255,255,255,0.03);
             padding: 1.5rem;
             border-radius: 8px;
-            border-left: 3px solid var(--accent);
+            border: 1px solid #1B3561;
         }
 
-        /* Paginação Inferior (Anterior/Próximo) */
-        .post-pagination {
+        /* Paginação Inferior */
+        .pagination {
             display: flex;
             justify-content: space-between;
-            margin-top: 2rem;
-            gap: 1rem;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
         }
 
-        .pagination-btn {
-            flex: 1;
-            background: var(--bg-card);
-            padding: 1rem;
-            border-radius: 8px;
-            text-decoration: none;
+        .pg-btn {
+            background: #132544;
             color: var(--text-main);
-            border: 1px solid #1B3561;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
             transition: 0.3s;
-            display: flex;
-            flex-direction: column;
+            border: 1px solid #1B3561;
         }
 
-        .pagination-btn span { font-size: 0.7rem; color: var(--accent); text-transform: uppercase; }
-        .pagination-btn:hover { border-color: var(--accent); background: #132544; }
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
 
-        footer {
-            text-align: center;
-            padding: 3rem;
-            margin-top: auto;
-            color: var(--text-dim);
-            font-size: 0.9rem;
-        }
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
 
-        /* Responsividade */
         @media (max-width: 900px) {
-            .main-wrapper { flex-direction: column; }
+            .layout { flex-direction: column; }
             .sidebar { width: 100%; position: static; }
-            .neutral-split { grid-template-columns: 1fr; }
-            article { padding: 1.5rem; }
+            .analysis-split { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
 
-<div class="main-wrapper">
-    <!-- Sidebar de Navegação -->
+<div class="layout">
+    <!-- BARRA LATERAL (SIDEBAR) -->
     <aside class="sidebar">
-        <div class="sidebar-card">
-            <h3>Portal Rogoberto</h3>
-            <p style="font-size: 0.85rem; color: var(--text-dim);">Análises diárias de <strong>Rogoberto Ribeiro da Silva</strong> sobre Juazeiro do Norte e o mundo.</p>
+        <div class="sidebar-inner">
+            <h3>Rogoberto Ribeiro</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Análise de Desenvolvimento e Sociedade.</p>
             
-            <h3>Diário de Fev/2026</h3>
-            <nav class="nav-list">
-                <!-- Links rápidos para indexação -->
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
                 <a href="01-02-2026.html">01</a>
                 <a href="02-02-2026.html" class="active">02</a>
                 <a href="03-02-2026.html">03</a>
@@ -217,27 +210,27 @@
                 <a href="27-02-2026.html">27</a>
                 <a href="28-02-2026.html">28</a>
             </nav>
-            <a href="index.html" style="display:block; margin-top:1rem; color:var(--accent); font-size:0.8rem; text-align:center;">← Voltar ao Início</a>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
         </div>
     </aside>
 
-    <!-- Conteúdo Principal -->
-    <main class="content-area">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
         <article>
-            <header class="post-header">
+            <header>
+                <div class="meta-info">Fevereiro 02, 2026 • Por <strong>Rogoberto Ribeiro da Silva</strong></div>
                 <h1>O Impacto da Modernização em Juazeiro do Norte</h1>
-                <p style="color: var(--text-dim);">Publicado por <strong>Rogoberto Ribeiro da Silva</strong> em 01 de Fevereiro de 2026</p>
             </header>
 
             <section>
                 <p>Em 2026, a cidade de <strong>Juazeiro do Norte</strong> enfrenta um dilema clássico de metrópoles em ascensão: como crescer verticalmente sem apagar as pegadas do passado. Este estudo, conduzido por <strong>Rogoberto Ribeiro da Silva</strong>, apresenta os dois lados dessa transformação urbana no Cariri.</p>
 
-                <div class="neutral-split">
-                    <div class="pov-box">
+                <div class="analysis-split">
+                    <div class="pov-card">
                         <h2>Vetor de Progresso</h2>
                         <p>Para o setor imobiliário e comercial, a verticalização é o selo de maturidade econômica de Juazeiro do Norte. Prédios modernos atraem profissionais qualificados e reduzem o custo de infraestrutura por habitante.</p>
                     </div>
-                    <div class="pov-box">
+                    <div class="pov-card">
                         <h2>Vetor Cultural</h2>
                         <p>Para os historiadores, a sombra dos grandes edifícios não deve esconder a Colina do Horto. A preservação do "skyline" religioso é vista como vital para manter o magnetismo turístico da cidade do Padre Cícero.</p>
                     </div>
@@ -247,23 +240,18 @@
                 <p>Como bem observa <strong>Rogoberto Ribeiro da Silva</strong>, o desenvolvimento de Juazeiro do Norte não precisa ser excludente. O planejamento urbano moderno permite zonas de alta densidade convivendo harmonicamente com corredores de preservação histórica.</p>
             </section>
 
-            <!-- Paginação entre posts -->
-            <nav class="post-pagination">
-                <a href="index.html" class="pagination-btn">
-                    <span>Anterior</span>
-                    Página Inicial
-                </a>
-                <a href="02-02-2026.html" class="pagination-btn" style="text-align: right;">
-                    <span>Próximo</span>
-                    O Futuro do DREX no Cariri
-                </a>
+            <!-- PAGINAÇÃO -->
+            <nav class="pagination">
+                <a href="01-02-2026.html" class="pg-btn">← Texto Anterior (01/02)</a>
+                <a href="03-02-2026.html" class="pg-btn">Próximo Texto (03/02) →</a>
             </nav>
         </article>
     </main>
 </div>
 
 <footer>
-    &copy; 2026 Portal de Notícias Rogoberto Ribeiro da Silva - Foco em Juazeiro do Norte e Região.
+    © 2026 Rogoberto Ribeiro da Silva. Foco em Urbanismo e Identidade Cultural. <br>
+    Juazeiro do Norte, Ceará.
 </footer>
 
 </body>
