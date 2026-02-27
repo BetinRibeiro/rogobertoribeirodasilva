@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO BÁSICO -->
+    <title>Rogoberto Ribeiro da Silva | Desenvolvedor de Aplicativos & Programador Full Stack</title>
+    <meta name="description" content="Rogoberto Ribeiro da Silva: Especialista em desenvolvimento de aplicativos mobile, sistemas web e arquitetura de software. Soluções escaláveis e eficientes.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, desenvolvedor de aplicativos, programador, mobile developer, web full stack, software engineer, criação de apps">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    
+    <!-- SEO OPEN GRAPH (Para compartilhar no WhatsApp/LinkedIn) -->
+    <meta property="og:title" content="Rogoberto Ribeiro da Silva | Portfólio Profissional">
+    <meta property="og:description" content="Desenvolvimento de soluções digitais de alta performance: Mobile e Web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://seudominio.com.br">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FONT AWESOME (ÍCONES) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #0f172a;
+            --accent: #38bdf8;
+            --text-main: #334155;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+        }
+
+        .header-hero {
+            background: linear-gradient(135deg, var(--secondary) 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        h1 { font-size: 2.8em; margin-bottom: 10px; letter-spacing: -1px; }
+        .subtitle { font-size: 1.2em; color: var(--accent); font-weight: 300; margin-bottom: 30px; }
+
+        .tags-container { margin-bottom: 20px; }
+        .tag {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent);
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin: 5px;
+            display: inline-block;
+            border: 1px solid rgba(56, 189, 248, 0.3);
+        }
+
+        .main-content {
+            background: var(--white);
+            margin-top: -50px;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+
+        h2 { color: var(--secondary); margin: 30px 0 15px; border-left: 4px solid var(--primary); padding-left: 15px; }
+
+        p { margin-bottom: 20px; font-size: 1.1em; color: #475569; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .skill-card {
+            background: #f1f5f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .skill-card:hover { transform: translateY(-5px); }
+        .skill-card i { font-size: 2em; color: var(--primary); margin-bottom: 10px; }
+        .skill-card h4 { color: var(--secondary); margin-bottom: 5px; }
+
+        .contact-section {
+            background: #e2e8f0;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-contact {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 15px 35px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .btn-contact:hover { background: #1d4ed8; }
+
+        .social-links { margin-top: 25px; }
+        .social-links a {
+            font-size: 1.5em;
+            margin: 0 15px;
+            color: var(--secondary);
+            transition: color 0.3s;
+        }
+        .social-links a:hover { color: var(--primary); }
+
+        footer { text-align: center; padding: 40px; color: #94a3b8; font-size: 0.9em; }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .main-content { padding: 25px; }
+        }
+    </style>
+
+    <!-- SCHEMA.ORG (JSON-LD) PARA MELHORAR INDEXAÇÃO NO GOOGLE -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rogoberto Ribeiro da Silva",
+      "jobTitle": "Desenvolvedor de Aplicativos e Programador Full Stack",
+      "url": "https://seudominio.com.br",
+      "email": "usbetin@gmail.com",
+      "description": "Especialista em desenvolvimento mobile e web, com foco em arquitetura de software e experiência do usuário."
+    }
+    </script>
+</head>
+<body>
+
+<header class="header-hero">
+    <div class="container">
+        <h1>Rogoberto Ribeiro da Silva</h1>
+        <p class="subtitle">Especialista em Engenharia de Software & Soluções Mobile</p>
+        <div class="tags-container">
+            <span class="tag">Android & iOS</span>
+            <span class="tag">Full Stack Web</span>
+            <span class="tag">UI/UX Design</span>
+            <span class="tag">Consultoria Técnica</span>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="main-content">
+        <h2>Sobre Mim</h2>
+        <p>Olá, eu sou <strong>Rogoberto Ribeiro da Silva</strong>. Com uma sólida base em lógica de programação e arquitetura de sistemas, dedico minha carreira a transformar desafios complexos em aplicativos simples, intuitivos e extremamente eficientes.</p>
+        
+        <p>Meu foco está em criar tecnologia que gere valor real, seja para startups em crescimento ou empresas consolidadas que buscam modernização digital. Atuo desde o planejamento da interface até a estruturação robusta do banco de dados.</p>
+
+        <h2>Especialidades Técnicas</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Mobile</h4>
+                <p>Apps nativos e híbridos de alta performance.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-code"></i>
+                <h4>Web Stack</h4>
+                <p>Sistemas robustos com tecnologias modernas.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h4>Backend</h4>
+                <p>APIs seguras e bancos de dados otimizados.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-rocket"></i>
+                <h4>Performance</h4>
+                <p>Otimização de código e carregamento ágil.</p>
+            </div>
+        </div>
+
+        <h2>Diferenciais de Rogoberto Ribeiro da Silva</h2>
+        <p>Ao contratar os serviços de <strong>Rogoberto Ribeiro da Silva</strong>, você garante um projeto pautado por:</p>
+        <ul>
+            <li><strong>Escalabilidade:</strong> Código preparado para o crescimento do seu negócio.</li>
+            <li><strong>Segurança:</strong> Implementação de protocolos modernos de proteção de dados.</li>
+            <li><strong>Clean Code:</strong> Manutenção facilitada e documentação clara.</li>
+            <li><strong>Foco no Usuário:</strong> Interfaces pensadas na melhor experiência de navegação.</li>
+        </ul>
+
+        <div class="contact-section">
+            <h2>Vamos tirar sua ideia do papel?</h2>
+            <p>Rogoberto Ribeiro da Silva está disponível para novos projetos e consultorias estratégicas.</p>
+            <a href="mailto:usbetin@gmail.com" class="btn-contact">Enviar E-mail Agora</a>
+            
+            <div class="social-links">
+                <a href="https://github.com/SEU_USUARIO" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/SEU_USUARIO" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://wa.me/SEU_TELEFONE" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2023 Rogoberto Ribeiro da Silva - Todos os direitos reservados.</p>
+    <p>Desenvolvido com foco em performance e SEO.</p>
+</footer>
+
+</body>
+</html>
