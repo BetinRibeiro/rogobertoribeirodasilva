@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas Comparativas de Segurança | Rogoberto Ribeiro da Silva</title>
+    
+    <!-- SEO AVANÇADO -->
+    <meta name="description" content="Rogoberto Ribeiro da Silva apresenta dados comparativos entre a segurança pública do Brasil, EUA e Europa. Análise de salários, treinamento e resolutividade.">
+    <meta name="keywords" content="Rogoberto Ribeiro da Silva, Estatísticas Segurança Pública, Gráficos Chartjs, Salário Policial Brasil vs EUA, Treinamento Policial, Taxa de Homicídios">
+    <meta name="author" content="Rogoberto Ribeiro da Silva">
+    <link rel="canonical" href="https://betinribeiro.github.io/rogobertoribeirodasilva/24-02-2026.html">
+
+    <!-- Script Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- JSON-LD (DADOS ESTRUTURADOS) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AnalysisNewsArticle",
+      "headline": "Segurança em Números: Brasil frente ao Padrão Internacional",
+      "author": {
+        "@type": "Person",
+        "name": "Rogoberto Ribeiro da Silva"
+      },
+      "datePublished": "2026-02-24"
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg-body: #071121;
+            --bg-card: #0C1A31; 
+            --accent: #00A8E8;
+            --text-main: #E1E8ED;
+            --text-dim: #8899A6;
+            --sidebar-width: 300px;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .layout {
+            display: flex;
+            max-width: 1250px;
+            margin: 0 auto;
+            gap: 2rem;
+            padding: 2rem 1rem;
+        }
+
+        .sidebar {
+            width: var(--sidebar-width);
+            flex-shrink: 0;
+            position: sticky;
+            top: 1rem;
+            height: fit-content;
+        }
+
+        .sidebar-inner {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid #1B3561;
+        }
+
+        .sidebar h3 {
+            color: var(--accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #1B3561;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .calendar-nav {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-nav a {
+            background: #081221;
+            color: var(--text-dim);
+            text-decoration: none;
+            font-size: 0.75rem;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .calendar-nav a:hover, .calendar-nav a.active {
+            background: var(--accent);
+            color: white;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            max-width: 850px;
+        }
+
+        article {
+            background: var(--bg-card);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h1 { color: var(--accent); font-size: 2rem; line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--accent); font-size: 1.4rem; margin-top: 2rem; border-bottom: 1px solid #1B3561; padding-bottom: 5px; }
+        .meta-info { color: var(--text-dim); font-size: 0.9rem; margin-bottom: 2rem; }
+
+        .chart-box {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid #1B3561;
+            margin: 2rem 0;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3rem;
+            border-top: 1px solid #1B3561;
+            padding-top: 2rem;
+        }
+
+        .pg-btn {
+            background: #132544;
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #1B3561;
+        }
+
+        .pg-btn:hover { background: var(--accent); border-color: var(--accent); }
+
+        footer { text-align: center; padding: 4rem 1rem; color: var(--text-dim); font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            .layout { flex-direction: column; }
+            .sidebar { width: 100%; position: static; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+    <aside class="sidebar">
+        <div class="sidebar-inner">
+            <h3>Rogoberto Ribeiro</h3>
+            <p style="font-size: 0.8rem; color: var(--text-dim);">Análise Global de Segurança Pública.</p>
+            
+            <h3>Arquivo Fev/2026</h3>
+            <nav class="calendar-nav">
+                <a href="01-02-2026.html">01</a>
+                <a href="02-02-2026.html">02</a>
+                <a href="03-02-2026.html">03</a>
+                <a href="04-02-2026.html">04</a>
+                <a href="05-02-2026.html">05</a>
+                <a href="06-02-2026.html">06</a>
+                <a href="07-02-2026.html">07</a>
+                <a href="08-02-2026.html">08</a>
+                <a href="09-02-2026.html">09</a>
+                <a href="10-02-2026.html">10</a>
+                <a href="11-02-2026.html">11</a>
+                <a href="12-02-2026.html">12</a>
+                <a href="13-02-2026.html">13</a>
+                <a href="14-02-2026.html">14</a>
+                <a href="15-02-2026.html">15</a>
+                <a href="16-02-2026.html">16</a>
+                <a href="17-02-2026.html">17</a>
+                <a href="18-02-2026.html">18</a>
+                <a href="19-02-2026.html">19</a>
+                <a href="20-02-2026.html">20</a>
+                <a href="21-02-2026.html">21</a>
+                <a href="22-02-2026.html">22</a>
+                <a href="23-02-2026.html">23</a>
+                <a href="24-02-2026.html" class="active">24</a>
+                <a href="25-02-2026.html">25</a>
+                <a href="26-02-2026.html">26</a>
+                <a href="27-02-2026.html">27</a>
+                <a href="28-02-2026.html">28</a>
+                <a href="25-02-2026.html">25</a>
+            </nav>
+            <a href="index.html" style="display:block; text-align:center; margin-top:20px; color:var(--accent); font-size:0.8rem; text-decoration:none;">← Voltar ao Início</a>
+        </div>
+    </aside>
+
+    <main class="main-content">
+        <article>
+            <header>
+                <div class="meta-info">Fevereiro 24, 2026 • Por Rogoberto Ribeiro da Silva</div>
+                <h1>O Espelho da Ordem: Brasil vs. Padrões de Primeiro Mundo</h1>
+            </header>
+
+            <section>
+                <p>Dando continuidade à análise das carreiras e funções policiais (Página 23), <strong>Rogoberto Ribeiro da Silva</strong> traz hoje um raio-x estatístico. Em 2026, a segurança pública não pode ser debatida apenas com opiniões; ela exige dados. Como o Brasil se comporta em relação a potências como os EUA e a Europa em termos de resolutividade, salário e treinamento?</p>
+
+                <h2>1. Taxa de Homicídios por 100k Habitantes</h2>
+                <div class="chart-box">
+                    <canvas id="homicideRateChart"></canvas>
+                </div>
+                <p>Embora estados como São Paulo e Santa Catarina apresentem índices menores, a média nacional do Brasil (~22.8) ainda dista significativamente do padrão europeu (< 2.5) e dos EUA (~5.5). Para <strong>Rogoberto Ribeiro da Silva</strong>, isso evidencia o abismo social e a necessidade de políticas de inteligência mais robustas.</p>
+
+                <h2>2. Horas de Treinamento e Preparo</h2>
+                <div class="chart-box">
+                    <canvas id="trainingHoursChart"></canvas>
+                </div>
+                <p>Um dado alarmante captado por <strong>Rogoberto Ribeiro da Silva</strong> é o tempo de formação. Enquanto na Noruega e Alemanha o policial passa por cerca de 4.000 a 4.500 horas de treinamento acadêmico e prático, o modelo brasileiro e norte-americano foca em treinamentos muito mais curtos (média de 800 a 1.000 horas), o que impacta diretamente na qualidade da abordagem e no uso da força.</p>
+
+                <h2>3. Salários Ajustados por PPC (Poder de Compra)</h2>
+                <div class="chart-box">
+                    <canvas id="salaryPPPChart"></canvas>
+                </div>
+                <p>Mesmo quando ajustamos o salário pela Paridade de Poder de Compra (PPC), o policial brasileiro ganha consideravelmente menos que seus colegas internacionais. O desequilíbrio entre o risco de vida e a remuneração é um dos principais fatores de desmotivação apontados na análise de <strong>Rogoberto Ribeiro da Silva</strong>.</p>
+
+                <h2>Conclusão de Rogoberto Ribeiro da Silva</h2>
+                <p>Os números não mentem: o Brasil resolve mais inquéritos formalmente (~72,7%) do que muitos países, mas falha na redução da violência real. Para <strong>Rogoberto Ribeiro da Silva</strong>, a solução não é apenas aumentar o efetivo, mas investir em treinamento de longo prazo e valorização salarial real. "Não se constrói uma polícia de primeiro mundo com treinamento de terceiro", conclui.</p>
+            </section>
+
+            <nav class="pagination">
+                <a href="23-02-2026.html" class="pg-btn">← Carreiras Policiais (23/02)</a>
+                <a href="25-02-2026.html" class="pg-btn">Próximo Texto (25/02) →</a>
+            </nav>
+        </article>
+    </main>
+</div>
+
+<script>
+    // Configurações Globais do Chart.js
+    Chart.defaults.color = '#8899A6';
+    Chart.defaults.borderColor = '#1B3561';
+
+    // 1. Gráfico de Homicídios
+    new Chart(document.getElementById("homicideRateChart"), {
+        type: 'bar',
+        data: {
+            labels: ["Brasil (~22.8)", "EUA (~5.5)", "Europa (~2.5)"],
+            datasets: [{
+                label: "Homicídios por 100k habitantes",
+                data: [22.8, 5.5, 2.5],
+                backgroundColor: ['#FF6384', '#36A2EB', '#4BC0C0'],
+                borderWidth: 1
+            }]
+        },
+        options: { responsive: true, plugins: { title: { display: true, text: 'Taxa de Violência Letal' } } }
+    });
+
+    // 2. Horas de Treinamento
+    new Chart(document.getElementById("trainingHoursChart"), {
+        type: 'bar',
+        data: {
+            labels: ["Brasil (~800)", "EUA (~1000)", "Alemanha (~4000)", "Noruega (~4500)"],
+            datasets: [{
+                label: "Horas de Treinamento Inicial",
+                data: [800, 1000, 4000, 4500],
+                backgroundColor: ['#FF6384', '#FFCE56', '#36A2EB', '#4BC0C0'],
+                borderWidth: 1
+            }]
+        },
+        options: { responsive: true, plugins: { title: { display: true, text: 'Duração da Formação Policial' } } }
+    });
+
+    // 3. Salário PPC
+    new Chart(document.getElementById("salaryPPPChart"), {
+        type: 'bar',
+        data: {
+            labels: ["Brasil (PPC)", "EUA (PPC)", "França (PPC)", "Alemanha (PPC)"],
+            datasets: [{
+                label: "Salário Médio (US$ PPC)",
+                data: [2500, 4800, 4500, 4200],
+                backgroundColor: ['#FF6384', '#36A2EB', '#9966FF', '#FF9F40'],
+                borderWidth: 1
+            }]
+        },
+        options: { responsive: true, plugins: { title: { display: true, text: 'Poder de Compra Policial' } } }
+    });
+</script>
+
+<footer>
+    © 2026 Rogoberto Ribeiro da Silva. Estatística comparativa e ciência de dados na segurança.
+</footer>
+
+</body>
+</html>
